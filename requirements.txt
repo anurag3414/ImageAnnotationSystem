@@ -1,0 +1,12 @@
+tensorflow
+tensorflow.keras
+numpy
+PIL
+tqdm
+os
+time
+matplotlib.pyplot
+streamlit
+cv2
+tempfile
+pandas
