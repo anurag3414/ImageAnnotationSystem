@@ -19,7 +19,7 @@ This tool provides a graphical user interface for annotating images using the YO
 1. Clone the repository:
    ```
    git clone https://github.com/your-username/image-annotation-tool.git
-   cd image-annotation-tool ```
+   cd ImageAnnotationSystem 
 1. create a virtual environment of python
    ```
    python -m venv venv
