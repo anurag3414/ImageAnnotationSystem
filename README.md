@@ -10,6 +10,41 @@ In this project, we applied various methods to generate annotated images of a dr
 - Dilip Choudhary - B21ES009
 - Vilok Parkhi - B21ES021
 
+## Instruction to run the image annotation part
+
+This tool provides a graphical user interface for annotating images using the YOLO (You Only Look Once) object detection algorithm. It allows users to upload an image, detect objects in the image, and annotate them with bounding boxes.
+
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/image-annotation-tool.git
+   cd image-annotation-tool ```
+1. create a virtual environment of python
+   ```
+   python -m venv venv
+   source venv/bin/activate  # for Linux/macOS
+   venv\Scripts\activate  # for Windows
+   
+2. install requirement.txt
+   ```
+    pip install -r requirements.txt
+   
+3. install the required weights and config file from the below link and add these files to the root.
+   
+   "https://pjreddie.com/media/files/yolov3.weights"
+   "https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg"
+   "https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names"
+   "https://github.com/yash42828/YOLO-object-detection-with-OpenCV/blob/master/real-time-object-detection/MobileNetSSD_deploy.caffemodel"
+   "https://github.com/yash42828/YOLO-object-detection-with-OpenCV/blob/master/real-time-object-detection/MobileNetSSD_deploy.prototxt.txt"
+   
+4. then run the main file
+   ```
+   streamlit run main.py
+
+The tool will open in your web browser. Upload an image using the file upload button.
+Click the "Detect Objects" button to run the YOLO object detection algorithm on the uploaded image. Detected objects will be displayed with bounding boxes.
+
 
 ## Roboflow
 
