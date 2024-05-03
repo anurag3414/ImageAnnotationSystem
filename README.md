@@ -30,14 +30,18 @@ This tool provides a graphical user interface for annotating images using the YO
    ```
     pip install -r requirements.txt
    
-3. install the required weights and config file from the below link and add these files to the root.
-   
-   "https://pjreddie.com/media/files/yolov3.weights"
-   "https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg"
-   "https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names"
-   "https://github.com/yash42828/YOLO-object-detection-with-OpenCV/blob/master/real-time-object-detection/MobileNetSSD_deploy.caffemodel"
-   "https://github.com/yash42828/YOLO-object-detection-with-OpenCV/blob/master/real-time-object-detection/MobileNetSSD_deploy.prototxt.txt"
-   
+3. Install the required weights and config files from the below links and add these files to the root:
+
+   - [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
+
+   - [yolov3.cfg](https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg)
+
+   - [coco.names](https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names)
+
+   - [MobileNetSSD_deploy.caffemodel](https://github.com/yash42828/YOLO-object-detection-with-OpenCV/blob/master/real-time-object-detection/MobileNetSSD_deploy.caffemodel)
+
+   - [MobileNetSSD_deploy.prototxt.txt](https://github.com/yash42828/YOLO-object-detection-with-OpenCV/blob/master/real-time-object-detection/MobileNetSSD_deploy.prototxt.txt)
+     
 4. then run the main file
    ```
    streamlit run main.py
