@@ -47,7 +47,17 @@ This tool provides a graphical user interface for annotating images using the YO
    streamlit run main.py
 
 The tool will open in your web browser. Upload an image using the file upload button.
-Click the "Detect Objects" button to run the YOLO object detection algorithm on the uploaded image. Detected objects will be displayed with bounding boxes.
+Click the "Annotate Objects" button to run the YOLO object detection algorithm on the uploaded image. Detected objects will be displayed with bounding boxes.
+
+## Instruction to run the GAN model to generate images
+1. Dowload atleast 100 images for which you want to generate the images.
+2. store that images in folder name Dataset
+3. then run the following command.
+    ```
+      python gan.py
+4. after some time you will get the output1 forldet in Dataset folder which contains the generated images\
+5. alter the EPOCHS to control the number of images to be generated.
+   
 
 
 ## Roboflow
