@@ -1,5 +1,5 @@
 
-# Embedded Systems - Drone Dataset with Annotations
+# Embedded Systems - Video Dataset with Annotations
 
 
 In this project, we applied various methods to generate annotated images of a drone image dataset. The methods that we used were - Roboflow, GAN, YOLOV3 live object annotation and YOLOV3 annotation via uploading image. Let’s dive into the specifications of each method.
@@ -7,19 +7,15 @@ In this project, we applied various methods to generate annotated images of a dr
 
 ## Team Members
 
-- Dilip Choudhary - B21ES009
-- Vilok Parkhi - B21ES021
+- Anurag Singh - B21ES004
+- Anupam Singh Bhadouriya - B21CS086
 
 ## Instruction to run the image annotation part
 
-This tool provides a graphical user interface for annotating images using the YOLO (You Only Look Once) object detection algorithm. It allows users to upload an image, detect objects in the image, and annotate them with bounding boxes.
+This tool provides a graphical user interface for annotating videos using the YOLO (You Only Look Once) object detection algorithm. It allows users to upload a video , convert video into frames and then annotate each frame , and annotate them with bounding boxes.
 
 ## Installation
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/image-annotation-tool.git
-   cd ImageAnnotationSystem 
 1. create a virtual environment of python
    ```
    python -m venv venv
@@ -44,65 +40,37 @@ This tool provides a graphical user interface for annotating images using the YO
      
 4. then run the main file
    ```
-   streamlit run main.py
-
-The tool will open in your web browser. Upload an image using the file upload button.
-Click the "Annotate Objects" button to run the YOLO object detection algorithm on the uploaded image. Detected objects will be displayed with bounding boxes.
-
-## Instruction to run the GAN model to generate images
-1. Dowload atleast 100 images for which you want to generate the images.
-2. store that images in folder name Dataset
-3. then run the following command.
-    ```
-      python gan.py
-4. after some time you will get the output1 forldet in Dataset folder which contains the generated images\
-5. alter the EPOCHS to control the number of images to be generated.
+   python .\demo.py
    
 
 
 ## Roboflow
 
-Roboflow is an intelligent tool that smartly annotates the images based on various classes that it has been trained on. We annotated 1000 images using roboflow. Following are the steps :   
+Roboflow is an intelligent tool that smartly annotates the images based on various classes that it has been trained on. We annotated 500 videoes  using roboflow by dividing them into frames of 40FPS . Following are the steps :   
 
-### Step 1 : Upload the images
+### Step 1 : Upload the video
 
-<img title="a title" alt="Alt text" src="/assets/Screenshot 2024-05-02 172821.jpg" width=100%>
-
-### Step 2 : Choose classes that you want to detect
-
-<img title="a title" alt="Alt text" src="/assets/Screenshot 2024-05-02 173050.png" width=100%>
+![image](https://github.com/dilip-choudhary1/ImageAnnotationSystem/assets/116138151/fad3814f-cea2-4a53-8a47-4257fc83e25b)
 
 
-### Step 2 : Choose appropriate confidence intervals
+### Step 2 : Choose FPS
 
-<img title="a title" alt="Alt text" src="/assets/Screenshot 2024-05-02 173227.png" width=100%>
+![image](https://github.com/dilip-choudhary1/ImageAnnotationSystem/assets/116138151/4b4d070e-c558-4975-9a2e-d691b85be848)
 
 
 
+### Step 3 : Choose appropriate confidence intervals
 
-## GAN
+![image](https://github.com/dilip-choudhary1/ImageAnnotationSystem/assets/116138151/6583157e-8daf-4e98-9c33-541774ca5541)
 
-GANs, or Generative Adversarial Networks, are a fascinating type of neural network architecture used in machine learning for generating new data. They consist of two neural networks: a generator and a discriminator.
-We trained the model on 200+ images and the GAN was able to generate 2800 images with 100 epochs. 
-
-### Code Snippet
-
-<img title="a title" alt="Alt text" src="/assets/WhatsApp Image 2024-05-02 at 15.48.47.jpeg" width=100%>
-
-### GAN Output Image
-
-<img title="a title" alt="Alt text" src="/assets/WhatsApp Image 2024-05-02 at 15.48.48.jpeg" width=100%>
-
-
-### Step 2 : Choose appropriate confidence intervals
-
-<img title="a title" alt="Alt text" src="/assets/Screenshot 2024-05-02 173227.png" width=100%>
 
 
 ## YOLOV3 Model Live Annotation
 
-YOLOv3 is a popular object detection algorithm that stands for "You Only Look Once version 3." It's an improvement over its predecessors, offering better accuracy and speed. YOLO algorithms are known for their ability to detect objects in images and videos in real-time with a 
-single forward pass through a neural network.
+
+YOLOv8 is a cutting-edge object detection algorithm employing a powerful backbone network, feature pyramid, and advanced training techniques to accurately detect objects across various scales. Its efficient architecture and post-processing methods make it a widely utilized solution for real-time applications such as autonomous driving and surveillance.
+
+
 
 
 ### Trial Run
@@ -123,21 +91,22 @@ single forward pass through a neural network.
 
 ## YOLOV3 Model on an uploaded image
 
-In this model, we will directly upload the image to get the image with annotated boxes and their coordinates
+In this model, we will directly upload the video to get the video with annotated boxes and their coordinates
 
 
 ### Dashboard
 
-<img title="a title" alt="Alt text" src="/assets/ce36895f-1b8c-4239-87ae-ef9ded604dc7.jpg" width=100%>
+![image](https://github.com/dilip-choudhary1/ImageAnnotationSystem/assets/116138151/846767ce-3ad2-4461-bf79-19c1432e0d0e)
 
-### Model Dashboard
 
-<img title="a title" alt="Alt text" src="/assets/b0d07e89-25e1-4312-ab08-ead2c74394e3.jpg" width=100%>
+
+### Raw video
+
 
 
 ### Uploaded image Output with annotations
 
-<img title="a title" alt="Alt text" src="/assets/f0a7bf8c-8eb0-405c-977c-ed5bb68274c2.jpg" width=100%>
+
 
 
 
